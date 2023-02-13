@@ -56,7 +56,7 @@ class Program
 
     static string[] GetArrayWithLessThanThreeCharsFromAnotherArray(string[] array)
     {
-        int sizeOfArray = GetSizeOfArrayWithLessThanThreeChars(array); 
+        int sizeOfArray = GetSizeOfArrayWithLessThanThreeChars(array);
         string[] newArray = new string[sizeOfArray];
         int j = 0;
         // string result = String.Empty;
@@ -64,7 +64,7 @@ class Program
         {
             if (array[i].Length <= 3) newArray[j++] += array[i];
         }
-        // можно было бы сделать через разделение строки, но если в начальном массиве будет пробелы, то он не корректно разделит
+        // можно было бы сделать через разделение строки, но если в начальном массиве будут пробелы, то он не корректно разделит
         // используя коллекиции это было сделать проще всего или если использовать библиотеку LINQ
         // string[] newArray = result.Trim().Split(' ');  
         return newArray;
